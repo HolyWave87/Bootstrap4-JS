@@ -9,7 +9,7 @@
 			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css?v=111" />
 		<script src="https://kit.fontawesome.com/9935986003.js" crossorigin="anonymous"></script>
 
 		<title>TEST</title>
@@ -123,7 +123,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		<!-- carousel stop -->
 		<!-- Modal OK start -->
@@ -326,34 +325,7 @@
 		</div>
 
 		<!-- Contacts end -->
-
 		<script>
-			// script отправки формы №1 без перезагрузки страницы
-
-			async function sendForm1(form) {
-				let response = await fetch("form1.php", {
-					method: "POST",
-					body: new FormData(form),
-				});
-				let data = await response.json();
-				if (data == "ok") {
-					$("#modal").modal("show"); //вызываем modal window с ответа от сервера т.е. по отправке формы
-					form.reset(); // очищаем поля формы
-				}
-			}
-			// script отправки формы №2 без перезагрузки страницы
-
-			async function sendForm2(form) {
-				let response = await fetch("form2.php", {
-					method: "POST",
-					body: new FormData(form),
-				});
-				let data = await response.json();
-				if (data == "ok") {
-					$("#modalGet").modal("hide"); //вызываем modal window с ответа от сервера т.е. по отправке формы
-					form.reset(); // очищаем поля формы
-				}
-			}
 			//Плавная навигация по странице
 
 			document.querySelectorAll('a[href^="#"').forEach((link) => {
@@ -376,7 +348,7 @@
 				});
 			});
 		</script>
-
+		<script src="/main.js?v=112"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
