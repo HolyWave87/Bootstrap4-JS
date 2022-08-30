@@ -1,0 +1,38 @@
+.form1 {
+  border-style: solid;
+  border-width: 2px;
+}
+#carouselExampleCaptions {
+  height: 500px;
+}
+.slide-2 {
+  margin-top: 150px;
+}
+
+.adress {
+  font-size: 1.5rem;
+  }
+/* увеличение карточек с преимуществами при наведении курсора */
+.card1:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.2);
+}
+/* увеличение карточек с преимуществами при наведении курсора */
+.card2:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.2);
+}
+/* увеличение карточек с преимуществами при наведении курсора */
+.card3:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.2);
+}
+/* увеличение карточек с преимуществами при наведении курсора */
+.card4:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.2);
+}
